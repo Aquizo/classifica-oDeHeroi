@@ -1,6 +1,9 @@
 const nomeDoHeroi = "Aquiles"
-let xp = 3153
-let classificacao = "Ferro"
+let xp = 0
+let classificacao = "nada"
+for (let contador = 0; contador < 10001; contador++){
+    xp += 1
+  }
 if (xp > 1000 && xp <= 2000){
     classificacao = "Bronze"
 } else if (xp > 2000 && xp <= 5000){
@@ -15,8 +18,8 @@ if (xp > 1000 && xp <= 2000){
     classificacao = "Imortal"
 } else if(xp >= 10001){
     classificacao = "Radiante"
-} else {
+} else if( xp <= 1000){
     classificacao = "Ferro"
 }
 
-console.log(classificacao)
+console.log("O Herói de nome " + nomeDoHeroi + " está no nível " + classificacao + " de aventureiro!")
